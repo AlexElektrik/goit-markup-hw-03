@@ -124,20 +124,38 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-main);
   padding: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.icon-contackt {
+  fill: currentColor;
+  align-items: baseline;
+  margin-right: 10px;
+}
+
+.contackt-item {
 }
 
 .contackt-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contack:hover,
-.contack:focus {
+.contackt-item:hover,
+.contackt-item:focus {
   color: var(--color-accent);
 }
 
 /* -------HERO--------- */
 .hero {
-  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1600px 600px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -172,6 +190,26 @@ body {
 }
 
 /* -------MAIN--------- */
+.icon-about-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.icon-about-item {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-about {
+  width: 70px;
+  height: 70px;
+}
 
 .about-list {
   display: flex;
@@ -234,8 +272,15 @@ body {
 }
 
 /* -----------.developer--------------- */
+.social-items {
+  display: flex;
+}
+
 .developers {
-  background-color: #f5f4fa;
+  background-image: linear-gradient(#f5f4fa, #f5f4fa);
+  background-size: 1600px;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -272,7 +317,95 @@ body {
   text-align: center;
 }
 
+.developers .social-items {
+  justify-content: center;
+}
+
+.icon-item-social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.icon-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.developers .icon-soc-link {
+  fill: #afb1b8;
+}
+
+.icon-item-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.developers .icon-soc-link:hover,
+.developers .icon-soc-link:focus {
+  fill: #ffffff;
+  background-color: var(--color-accent);
+}
+
+/* ---------------CLIENTS----------------- */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #212121;
+}
+
+.icon-clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-client-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+
+.icon-client {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.icon-client-link:hover {
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
 /* -------FOOTER-------- */
+.footer .container {
+  display: flex;
+}
+
+.icon-items-footer {
+  display: flex;
+}
+
+.address-container {
+  min-width: 300px;
+}
 
 .footer-logo-studio {
   color: #ffffff;
@@ -284,7 +417,10 @@ body {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-image: linear-gradient(#2f303a, #2f303a);
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -312,6 +448,33 @@ body {
 .address-footer:hover,
 .address-footer:focus {
   color: var(--color-accent);
+}
+
+.icon-title-footer {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.icon-container-footer {
+  padding: 15px;
+}
+
+.footer .icon-item-social {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .icon-soc-link {
+  fill: #ffffff;
+}
+
+.footer .icon-item-social:hover,
+.footer .icon-item-social:focus {
+  background-color: #2196f3;
 }
 
 /* --------------PORTFOLIO------------------ */
@@ -380,4 +543,8 @@ body {
 .example-item {
   width: 370px;
   border-bottom: 1px solid #eee;
+}
+.example-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
